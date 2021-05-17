@@ -10,36 +10,35 @@
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 
-<body class="p-3 mb-2 bg-da text-dark" >
+<body class="p-3 mb-2 bg-success text-white">
   <div class="container">
     <header>
-      <div class="row">
-        <div class="col">
-          Inicio
-        </div>
-        <div class="col">
-          Sobre
-        </div>
+
+      <div class="btn-group">
+        <a href="index.html" class="btn btn-warning" aria-current="page">Tabuada </a>
+        <a href="sobre.html" class="btn btn-warning"> Sobre </a>
       </div>
+      <img src="imagens/calc.png" alt="calculadora" width="35">
     </header>
     <br>
+
+    <hr>
     <section>
       <div class="row">
+
         <div class="col">
-          <!--Em Branco-->
-        </div>
-        <div class="col">
-          <input type="number" class="form-control" id="num" >
+          <input type="number" class="form-control" id="num">
           <br>
-          <button type="button" class="btn btn-outline-primary" onclick="confirmar()">Confirmar</button>
+          <button type="button" class="btn btn-warning" onclick="confirmar()">Confirmar</button>
+          <hr>
           <br>
-          <h1 id="msg"> Resultado...</h1>
+          <h2 id="msg"> Resultado...</h2>
+          <hr>
+          <img src="imagens/pitagoras.jpg" class="rounded mx-auto d-block" alt="pitagoras">
         </div>
-        <div class="col">
-          <!--Em Branco--> 
-        </div>
+
       </div>
-      
+
     </section>
   </div>
   <script>
@@ -47,20 +46,23 @@
       var n = document.getElementById('num')
       var num = Number(n.value)
       var msg = document.getElementById('msg')
-      msg.innerHTML = `A tabuada de ${num} é: <br>`
-      msg.innerHTML += `<h2>${num}x 1 = ${num*1}</h2>`
-      msg.innerHTML += `<h2>${num}x 2 = ${num*2}</h2>`
-      msg.innerHTML += `<h2>${num}x 3 = ${num*3}</h2>`
-      msg.innerHTML += `<h2>${num}x 4 = ${num*4}</h2>`
-      msg.innerHTML += `<h2>${num}x 5 = ${num*5}</h2>`
-      msg.innerHTML += `<h2>${num}x 6 = ${num*6}</h2>`
-      msg.innerHTML += `<h2>${num}x 7 = ${num*7}</h2>`
-      msg.innerHTML += `<h2>${num}x 8 = ${num*8}</h2>`
-      msg.innerHTML += `<h2>${num}x 9 = ${num*9}</h2>`
-      msg.innerHTML += `<h2>${num}x 10 = ${num*10}</h2>`
+      msg.innerHTML = `<h2>A tabuada de ${num} é:</h2>`
+      msg.innerHTML += `<h2>${num}x 1 = ${num * 1}</h2>`
+      msg.innerHTML += `<h2>${num}x 2 = ${num * 2}</h2>`
+      msg.innerHTML += `<h2>${num}x 3 = ${num * 3}</h2>`
+      msg.innerHTML += `<h2>${num}x 4 = ${num * 4}</h2>`
+      msg.innerHTML += `<h2>${num}x 5 = ${num * 5}</h2>`
+      msg.innerHTML += `<h2>${num}x 6 = ${num * 6}</h2>`
+      msg.innerHTML += `<h2>${num}x 7 = ${num * 7}</h2>`
+      msg.innerHTML += `<h2>${num}x 8 = ${num * 8}</h2>`
+      msg.innerHTML += `<h2>${num}x 9 = ${num * 9}</h2>`
+      msg.innerHTML += `<h2>${num}x 10 = ${num * 10}</h2>`
     }
   </script>
-
+  <hr>
+<footer>
+  Elias Castro 2021
+</footer>
 </body>
 
 </html>
